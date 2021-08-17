@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Page Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            color: white;
+            background-color: #FDAFB1;
+        }
+
+        #header,
+        #footer {
+            height: 10vh;
+            line-height: 10vh;
+            margin: 1em;
+            text-align: center;
+            color: #FFF;
+            background-color: #98D1C7;
+        }
+
+        #aside,
+        #article {
+            display: inline-block;
+            margin: 1.1em;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        #aside {
+            width: 30%;
+            height: 70vh;
+            line-height: 70vh;
+            background-color: #62B7B6;
+        }
+
+        #article {
+            position: relative;
+            width: 65%;
+            height: 70vh;
+            line-height: 70vh;
+            background-color: #FA7A7B;
+        }
+
+        .img-one {
+            position: absolute;
+            display: inline-block;
+            bottom: 5%;
+            left: 5%;
+            width: 250px;
+            height: 250px;
+            line-height: 250px;
+            background-color: #D6D5D5;
+        }
+
+        .img-two {
+            position: absolute;
+            display: inline-block;
+            bottom: 5%;
+            left: 40%;
+            width: 250px;
+            height: 250px;
+            line-height: 250px;
+            background-color: #D6D5D5;
+        }
+
+        .img-three {
+            position: absolute;
+            display: inline-block;
+            bottom: 5%;
+            right: 5%;
+            width: 250px;
+            height: 250px;
+            line-height: 250px;
+            background-color: #D6D5D5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">Header</div>
+    <div id="aside">Aside</div>
+    <div id="article">Article
+        <div class="img-one">Image</div>
+        <div class="img-two">Image</div>
+        <div class="img-three">Image</div>
+    </div>
+    <div id="footer">Footer</div>
+    <p style="text-align:center"><a href="../index.html">Go Back</a></p>
+</body>
+
+</html>

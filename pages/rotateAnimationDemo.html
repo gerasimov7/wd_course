@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Animation Demo</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        div[class="animated"] {
+            margin: 25vh auto;
+            width: 15px;
+            height: 200px;
+            background-image: linear-gradient(yellow, red);
+            border-radius: 0 0 100% 100%;
+            animation: rotation 5s linear infinite;
+        }
+
+        @keyframes rotation {
+
+            0%,
+            50%,
+            100% {
+                transform: rotate(0deg);
+                transform-origin: center bottom;
+            }
+
+            25% {
+                transform: rotate(-90deg);
+                transform-origin: center bottom;
+            }
+
+            75% {
+                transform: rotate(90deg);
+                transform-origin: center bottom;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animated"></div>
+</body>
+
+</html>
