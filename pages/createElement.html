@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Element</title>
+</head>
+
+<body>
+    <div><input type="text" name="task" placeholder="task_title">
+        <button onclick="createToDo();">Add</button>
+    </div>
+    <hr>
+    <h1>Current Task</h1>
+    <div>
+        <ul id="taskList">
+        </ul>
+    </div>
+    <script>
+        function createToDo() {
+            var newLiElement = document.createElement("li");
+            var inputNode = document.querySelector("input[type='text']");
+            var textNode = document.createTextNode(inputNode.value);
+            newLiElement.appendChild(textNode);
+            var taskListNode = document.getElementById("taskList");
+            taskListNode.insertBefore(newLiElement, taskListNode.childNodes[0]);
+        }
+    </script>
+</body>
+
+</html>
